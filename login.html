@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>회원가입 페이지</title>
+    <meta charset="utf-8">
+    <link href="signup.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <form class="wrapper" method="post" action="login_comp.php">
+        <div class="title"><h1 style="font-size: 21px;">로그인</h1></div>
+        <div class="email">
+            <input id="email" name="email" type="text" placeholder="이메일을 입력해 주세요.">
+            <div id="emailError" class="error"></div>
+        </div>
+        <div class="name">
+            <input id="name"  name ="name" type="text" placeholder="이름을 입력해 주세요.">
+            <div id="nameError" class="error"></div>
+        </div>
+        <div class="password">
+            <input id="password" name="password" type="password" placeholder="비밀번호를 입력해 주세요.">
+            <div id="passwordError" class="error"></div>
+        </div>
+        <!-- <div class="passwordCheck">
+            <input id="passwordCheck" type="password" placeholder="비밀번호를 다시 입력해 주세요.">
+            <div id="passwordCheckError" class="error"></div>
+        </div> -->
+
+        <div class="age">
+            <!-- <select id="age">
+                <option selected disabled>나이를 선택하세요.</option>
+                <option>10</option>
+                <option>20</option>
+                <option>30</option>
+                <option>40</option>
+                <option>50</option>
+            </select> -->
+            <input id="ten" type="radio" name="age">10  
+            <input id="twenty"  type="radio" name="age">20
+            <input id="thirty"  type="radio" name="age">30  
+            <input id="forty" type="radio" name="age">40  
+            <input id="fifty" type="radio" name="age">50  
+        </div>
+        <div class="gender">
+            <input id="gender_man" type="radio" name="gender">남성  
+            <input id="gender_woman" type="radio" name="gender">여성
+        </div>
+        <div class="line">
+            <hr>
+        </div>
+        <div class="signUp">
+            <button class="login_btn" id="signUpButton" >로그인</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
