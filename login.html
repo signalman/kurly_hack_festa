@@ -12,30 +12,36 @@
     <form class="wrapper" method="post" action="login_comp.php">
         <div class="title"><h1 style="font-size: 21px;">로그인</h1></div>
         <div class="email">
+            이메일을 입력하세요.
             <input id="email" name="email" type="text" placeholder="이메일을 입력해 주세요.">
             <div id="emailError" class="error"></div>
         </div>
         <div class="name">
+            이름을 입력하세요.
             <input id="name" name ="name" type="text" placeholder="이름을 입력해 주세요.">
             <div id="nameError" class="error"></div>
         </div>
         <div class="password">
+            비밀번호를 입력하세요.
             <input id="password" name="password" type="password" placeholder="비밀번호를 입력해 주세요.">
             <div id="passwordError" class="error"></div>
         </div>
 
-        <div class="age">
+        <div class="name">
+            나이대를 입력하세요. ex)10, 20, 30, 40, 50<br/>
             <input type="text" name="age" placeholder="나이대를 입력하세요. ex)10, 20, 30, 40, 50">
+            <div class="error"></div>
         </div>
-        <div class="gender">
+        <div class="name">
+            성별을 입력하세요. ex)남자, 여자<br/>
             <input id="gender"  name="gender" placeholder="성별을 입력하세요 ex)남자, 여자"> 
+            <div class="error"></div>
         </div>
         <div class="line">
             <hr>
         </div>
         <div class="signUp">
             <button class="login_btn" id="signUpButton" >로그인</button>
-            <!-- <button type="button" class="navyBtn" onClick="location.href='PAGENAME.html'">로그인</button> -->
         </div>
     </form>
 
