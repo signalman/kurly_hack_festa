@@ -1,5 +1,5 @@
 <?php
-include 'index.html';
+// include 'login.html';
 
 $host = 'localhost';
 $user = 'root';
@@ -12,12 +12,11 @@ $mysqli = new mysqli($host, $user, $pw, $dbName);
 // }else{
 //     echo "MySQL 접속 실패";
 // }
-
 $conn = mysqli_connect("localhost", "root", "1234", "customer");
-$gender = $_POST['gender'];
-$age = $_POST['age'];
-$sql = "insert into user_table(gender, age) values ";
-$sql = $sql."('".$gender."', '".$age."')";
+
+$keyword = $_POST['keyword'];
+
+$sql = "update user_table set Rec_vi_pr_3 = '".$keyword."' order by id DESC LIMIT 1";
 $mysqli->query($sql);
 $mysqli->close();
 ?>
